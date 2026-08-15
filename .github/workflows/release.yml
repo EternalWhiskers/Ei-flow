@@ -63,14 +63,11 @@ jobs:
           ./gradlew --no-daemon assembleDebug
 
       - name: Prepare release assets
-        env:
-          RELEASE_TAG: ${{ github.ref_name }}
         run: |
           set -euo pipefail
           mkdir -p release-assets
-          cp android/app/build/outputs/apk/debug/app-debug.apk "release-assets/eiflow-${RELEASE_TAG}-debug.apk"
-          tar -czf "release-assets/eiflow-${RELEASE_TAG}-web.tar.gz" -C www .
-          (cd release-assets && sha256sum *.apk *.tar.gz > SHA256SUMS)
+          cp android/app/build/outputs/apk/debug/app-debug.apk release-assets/eiflow.apk
+          (cd release-assets && sha256sum eiflow.apk > SHA256SUMS)
 
       - name: Create GitHub Release
         env:

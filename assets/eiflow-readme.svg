@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 500" role="img" aria-labelledby="title desc">
+  <title id="title">EiFlow — make space for the next thing</title>
+  <desc id="desc">An animated signal garden with an EiFlow focus dashboard, moving attention lines, and calm productivity metrics.</desc>
+  <defs>
+    <linearGradient id="canvas" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#142F34"/>
+      <stop offset="0.55" stop-color="#1E4842"/>
+      <stop offset="1" stop-color="#10272B"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.98"/>
+      <stop offset="1" stop-color="#EEF2F5" stop-opacity="0.94"/>
+    </linearGradient>
+    <linearGradient id="trace" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#F4B36B"/>
+      <stop offset="0.5" stop-color="#7AD9BC"/>
+      <stop offset="1" stop-color="#A7B6F5"/>
+    </linearGradient>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M44 0H0V44" fill="none" stroke="#B8D9D2" stroke-opacity="0.1"/>
+      <circle cx="1" cy="1" r="1.3" fill="#D7F36B" fill-opacity="0.2"/>
+    </pattern>
+    <filter id="panelShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#08181B" flood-opacity="0.28"/>
+    </filter>
+    <style>
+      .display { font-family: 'Arial Rounded MT Bold', 'Trebuchet MS', sans-serif; }
+      .body { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; }
+      .motion { transform-box: fill-box; transform-origin: center; }
+      .orbit { animation: orbit 16s linear infinite; }
+      .breathe { animation: breathe 3.8s ease-in-out infinite; }
+      .float-a { animation: float-a 5s ease-in-out infinite; }
+      .float-b { animation: float-b 6.5s ease-in-out infinite; }
+      .draw { stroke-dasharray: 12 18; animation: draw 5s linear infinite; }
+      @keyframes orbit { to { transform: rotate(360deg); } }
+      @keyframes breathe { 0%, 100% { opacity: .48; transform: scale(.88); } 50% { opacity: 1; transform: scale(1.16); } }
+      @keyframes float-a { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+      @keyframes float-b { 0%, 100% { transform: translate(0, 0); } 50% { transform: translate(8px, -7px); } }
+      @keyframes draw { to { stroke-dashoffset: -120; } }
+      @media (prefers-reduced-motion: reduce) {
+        .motion, .orbit, .breathe, .float-a, .float-b, .draw { animation: none !important; }
+      }
+    </style>
+  </defs>
+
+  <rect width="1200" height="500" rx="28" fill="url(#canvas)"/>
+  <rect width="1200" height="500" rx="28" fill="url(#grid)"/>
+  <path d="M0 420C180 352 248 468 420 410C566 361 640 350 776 405C914 461 1025 382 1200 416" fill="none" stroke="#D7F36B" stroke-opacity="0.11" stroke-width="2"/>
+  <path class="draw" d="M0 420C180 352 248 468 420 410C566 361 640 350 776 405C914 461 1025 382 1200 416" fill="none" stroke="url(#trace)" stroke-opacity="0.42" stroke-width="2"/>
+
+  <g transform="translate(62 58)">
+    <text class="body" x="0" y="0" fill="#D7F36B" font-size="12" font-weight="700" letter-spacing="2.6">LOCAL-FIRST  /  SIGNAL GARDEN</text>
+    <text class="display" x="0" y="98" fill="#F8FBF8" font-size="66" font-weight="700" letter-spacing="-2.8">Make space</text>
+    <text class="display" x="0" y="164" fill="#F4B36B" font-size="66" font-weight="700" letter-spacing="-2.8">for the next thing.</text>
+    <text class="body" x="2" y="213" fill="#C2D4D0" font-size="17" letter-spacing="0.1">A calmer way to plan, focus, and notice your rhythm.</text>
+
+    <g class="motion float-a" transform="translate(4 258)">
+      <rect width="178" height="42" rx="21" fill="#F4B36B"/>
+      <circle cx="24" cy="21" r="7" fill="#1E4842"/>
+      <path d="M21 21h6M24 18v6" stroke="#F4B36B" stroke-width="2" stroke-linecap="round"/>
+      <text class="body" x="44" y="26" fill="#1E4842" font-size="14" font-weight="700">FOCUS, GENTLY</text>
+    </g>
+    <g class="motion float-b" transform="translate(196 274)">
+      <circle cx="7" cy="7" r="7" fill="#7AD9BC"/>
+      <text class="body" x="24" y="12" fill="#C2D4D0" font-size="13">Your data stays yours.</text>
+    </g>
+  </g>
+
+  <g filter="url(#panelShadow)" transform="translate(700 48)">
+    <rect width="438" height="374" rx="24" fill="url(#panel)"/>
+    <rect x="1" y="1" width="436" height="372" rx="23" fill="none" stroke="#FFFFFF" stroke-opacity="0.65"/>
+    <text class="body" x="30" y="38" fill="#64747D" font-size="11" font-weight="700" letter-spacing="2">TODAY  /  MONDAY</text>
+    <circle cx="381" cy="32" r="6" fill="#7AD9BC"/>
+    <text class="body" x="30" y="78" fill="#17242B" font-size="24" font-weight="700">Good morning, Alex.</text>
+    <text class="body" x="30" y="103" fill="#64747D" font-size="14">One clear step is enough to begin.</text>
+
+    <g transform="translate(30 132)">
+      <rect width="378" height="76" rx="16" fill="#E8EEF0"/>
+      <circle cx="39" cy="38" r="25" fill="none" stroke="#CAD8DC" stroke-width="6"/>
+      <path d="M39 13A25 25 0 1 1 20 54" fill="none" stroke="#F4B36B" stroke-width="6" stroke-linecap="round"/>
+      <text class="body" x="82" y="31" fill="#17242B" font-size="13" font-weight="700">NEXT SIGNAL</text>
+      <text class="body" x="82" y="53" fill="#1E4842" font-size="18" font-weight="700">Shape the landing page</text>
+      <circle class="motion breathe" cx="344" cy="38" r="8" fill="#F4B36B"/>
+    </g>
+
+    <g transform="translate(30 230)">
+      <text class="body" x="0" y="0" fill="#64747D" font-size="11" font-weight="700" letter-spacing="1.7">YOUR RHYTHM</text>
+      <path d="M0 38C35 14 61 58 96 32C128 8 162 46 194 24C226 2 252 44 285 22C320 -2 347 30 378 10" fill="none" stroke="#C8D5D8" stroke-width="3" stroke-linecap="round"/>
+      <path class="draw" d="M0 38C35 14 61 58 96 32C128 8 162 46 194 24C226 2 252 44 285 22C320 -2 347 30 378 10" fill="none" stroke="url(#trace)" stroke-width="3" stroke-linecap="round"/>
+      <circle class="motion breathe" cx="194" cy="24" r="5" fill="#7AD9BC"/>
+    </g>
+
+    <g transform="translate(30 318)">
+      <rect width="113" height="28" rx="14" fill="#1E4842"/>
+      <text class="body" x="17" y="19" fill="#F8FBF8" font-size="11" font-weight="700">25 MIN FOCUS</text>
+      <rect x="124" width="113" height="28" rx="14" fill="#E1E8FA"/>
+      <text class="body" x="140" y="19" fill="#42518B" font-size="11" font-weight="700">3 TASKS LEFT</text>
+      <rect x="248" width="130" height="28" rx="14" fill="#E2F4ED"/>
+      <text class="body" x="265" y="19" fill="#23705B" font-size="11" font-weight="700">IN A GOOD FLOW</text>
+    </g>
+  </g>
+
+  <g class="motion orbit" transform="translate(627 90)">
+    <circle cx="0" cy="0" r="34" fill="none" stroke="#A7B6F5" stroke-opacity="0.42"/>
+    <circle cx="0" cy="-34" r="5" fill="#A7B6F5"/>
+    <circle cx="34" cy="0" r="4" fill="#F4B36B"/>
+  </g>
+  <g class="motion breathe" transform="translate(650 390)">
+    <circle r="5" fill="#D7F36B"/>
+    <circle r="14" fill="none" stroke="#D7F36B" stroke-opacity="0.22"/>
+  </g>
+  <circle class="motion float-b" cx="598" cy="444" r="3" fill="#7AD9BC"/>
+</svg>
