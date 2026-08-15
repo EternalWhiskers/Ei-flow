@@ -53,6 +53,10 @@ jobs:
       - name: Sync Capacitor Android project
         run: npx cap sync android
 
+      - name: Ensure Gradle wrapper is executable
+        working-directory: android
+        run: chmod +x gradlew
+
       - name: Assemble debug APK
         working-directory: android
         run: ./gradlew --no-daemon assembleDebug
