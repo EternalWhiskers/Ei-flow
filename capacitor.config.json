@@ -1,0 +1,28 @@
+{
+  "appId": "com.eiflow.app",
+  "appName": "EiFlow",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "https"
+  },
+  "plugins": {
+    "SystemBars": {
+      "insetsHandling": "css",
+      "style": "LIGHT",
+      "hidden": false,
+      "animation": "NONE"
+    },
+    "StatusBar": {
+      "overlaysWebView": false,
+      "style": "LIGHT",
+      "backgroundColor": "#EEF2F5"
+    },
+    "SplashScreen": {
+      "launchAutoHide": true,
+      "launchShowDuration": 1400,
+      "showSpinner": false,
+      "backgroundColor": "#EEF2F5",
+      "androidSplashResourceName": "splash"
+    }
+  }
+}

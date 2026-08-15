@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" fill="none">
+  <defs>
+    <linearGradient id="flow" x1="178" y1="172" x2="850" y2="864" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C5B2FF"/>
+      <stop offset="0.52" stop-color="#7352C7"/>
+      <stop offset="1" stop-color="#33205F"/>
+    </linearGradient>
+  </defs>
+  <path d="M512 126C512 126 672 246 672 438C672 558 600 658 512 726C424 658 352 558 352 438C352 246 512 126 512 126Z" fill="url(#flow)"/>
+  <path d="M512 898C512 898 352 778 352 586C352 466 424 366 512 298C600 366 672 466 672 586C672 778 512 898 512 898Z" fill="#8F75E4" fill-opacity="0.9"/>
+  <path d="M126 512C126 512 246 352 438 352C558 352 658 424 726 512C658 600 558 672 438 672C246 672 126 512 126 512Z" fill="#B6A0F3" fill-opacity="0.9"/>
+  <path d="M898 512C898 512 778 672 586 672C466 672 366 600 298 512C366 424 466 352 586 352C778 352 898 512 898 512Z" fill="#5C3EAD" fill-opacity="0.9"/>
+  <circle cx="512" cy="512" r="104" fill="#F4B36B"/>
+  <circle cx="512" cy="512" r="57" fill="#2B1B4D"/>
+  <path d="M488 512C488 493.222 498.444 478 512 478C525.556 478 536 493.222 536 512C536 530.778 525.556 546 512 546C498.444 546 488 530.778 488 512Z" fill="#D7F36B"/>
+</svg>

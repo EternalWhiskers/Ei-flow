@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+
+# Vite and Capacitor generated web output
+dist/
+www/
+
+# Android/Gradle generated files
+.gradle/
+android/.gradle/
+android/build/
+android/app/build/
+android/capacitor-cordova-android-plugins/build/
+android/local.properties
+
+# IDE files
+.idea/
+*.iml
+.vscode/*
+!.vscode/extensions.json
+
+# Build artifacts and signing material
+*.apk
+*.aab
+*.keystore
+*.jks
+
+# Local Kiro context and review artifacts
+.kiro/
+semantic-review/
+skill-observations/
+
+# Local environment files
+.env
+.env.*
+!.env.example

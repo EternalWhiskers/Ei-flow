@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">EiFlow</string>
+    <string name="title_activity_main">EiFlow</string>
+    <string name="package_name">com.eiflow.app</string>
+    <string name="custom_url_scheme">com.eiflow.app</string>
+</resources>
